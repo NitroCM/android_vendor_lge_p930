@@ -22,13 +22,11 @@ PRODUCT_COPY_FILES := \
     vendor/lge/p930/proprietary/lib/libDivxDrm.so:obj/lib/libDivxDrm.so \
     vendor/lge/p930/proprietary/lib/libtime_genoff.so:obj/lib/libtime_genoff.so \
     vendor/lge/p930/proprietary/lib/libdiag.so:obj/lib/libdiag.so \
-    vendor/lge/p930/proprietary/lib/libdrmfs.so:obj/lib/libdrmfs.so \
-    vendor/lge/p930/proprietary/lib/libQSEEComAPI.so:obj/lib/libQSEEComAPI.so \
     vendor/lge/p930/proprietary/lib/libqc-opt.so:obj/lib/libqc-opt.so \
     vendor/lge/p930/proprietary/lib/libril.so:obj/lib/libril.so \
-#    vendor/lge/p930/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
-#    vendor/lge/p930/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
-#    vendor/lge/p930/proprietary/lib/libacdbmapper.so:obj/lib/libacdbmapper.so \
+    vendor/lge/p930/proprietary/lib/libaudioalsa.so:obj/lib/libaudioalsa.so \
+    vendor/lge/p930/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
+    vendor/lge/p930/proprietary/lib/libacdbmapper.so:obj/lib/libacdbmapper.so \
 
 ## Flash
 PRODUCT_COPY_FILES += \
@@ -54,6 +52,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p930/proprietary/bin/qcks:system/bin/qcks \
     vendor/lge/p930/proprietary/bin/ks:system/bin/ks \
     vendor/lge/p930/proprietary/bin/qrngd:system/bin/qrngd \
+    vendor/lge/p930/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/lge/p930/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/lge/p930/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/lge/p930/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
@@ -95,11 +94,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p930/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
 
 ## Audio
-#PRODUCT_COPY_FILES += \
-#    vendor/lge/p930/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-#    vendor/lge/p930/proprietary/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
-#    vendor/lge/p930/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
-#    vendor/lge/p930/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
+PRODUCT_COPY_FILES += \
+    vendor/lge/p930/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
+    vendor/lge/p930/proprietary/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
+    vendor/lge/p930/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
+    vendor/lge/p930/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
 
 ## Camera
 PRODUCT_COPY_FILES += \
