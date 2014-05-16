@@ -51,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p930/proprietary/bin/rild:system/bin/rild \
     vendor/lge/p930/proprietary/bin/qcks:system/bin/qcks \
     vendor/lge/p930/proprietary/bin/ks:system/bin/ks \
+    vendor/lge/p930/proprietary/bin/rngd:system/bin/rngd \
     vendor/lge/p930/proprietary/bin/qrngd:system/bin/qrngd \
     vendor/lge/p930/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/lge/p930/proprietary/bin/time_daemon:system/bin/time_daemon \
@@ -102,7 +103,7 @@ PRODUCT_COPY_FILES += \
 
 ## Camera
 PRODUCT_COPY_FILES += \
-    vendor/lge/p930/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
+    vendor/lge/p930/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.vendor.msm8660.so \
     vendor/lge/p930/proprietary/lib/libOlaFaceDetector.so:system/lib/libOlaFaceDetector.so \
     vendor/lge/p930/proprietary/lib/libmmjps.so:system/lib/libmmjps.so \
     vendor/lge/p930/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
@@ -141,6 +142,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p930/proprietary/lib/libSHIMDivxDrm.so:system/lib/libSHIMDivxDrm.so \
     vendor/lge/p930/proprietary/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
     vendor/lge/p930/proprietary/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
+    vendor/lge/p930/proprietary/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    vendor/lge/p930/proprietary/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
+    vendor/lge/p930/proprietary/lib/libOmxAmrwbplusDec.so:system/lib/libOmxAmrwbplusDec.so \
+    vendor/lge/p930/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
+    vendor/lge/p930/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/lge/p930/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/lge/p930/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/lge/p930/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/p930/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
