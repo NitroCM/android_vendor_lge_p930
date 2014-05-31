@@ -20,5 +20,6 @@ PRODUCT_PACKAGES += \
 	LGHome \
 	LGHome_Theme_Optimus \
 	lge-res \
+	CPUSpy
 
 $(call inherit-product, vendor/lge/p930/p930-vendor-blobs.mk)
