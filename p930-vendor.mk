@@ -15,11 +15,4 @@
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/lge/p930/overlay
 
-# Apps
-PRODUCT_PACKAGES += \
-	LGHome \
-	LGHome_Theme_Optimus \
-	lge-res \
-	CPUSpy
-
 $(call inherit-product, vendor/lge/p930/p930-vendor-blobs.mk)

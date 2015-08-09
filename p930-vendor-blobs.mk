@@ -28,14 +28,6 @@ PRODUCT_COPY_FILES := \
     vendor/lge/p930/proprietary/lib/libacdbloader.so:obj/lib/libacdbloader.so \
     vendor/lge/p930/proprietary/lib/libacdbmapper.so:obj/lib/libacdbmapper.so \
 
-## Flash
-PRODUCT_COPY_FILES += \
-    vendor/lge/p930/proprietary/app/oem_install_flash_player_ics.apk:system/app/oem_install_flash_player.apk \
-    vendor/lge/p930/proprietary/lib/plugins/com.adobe.flashplayer/libflashplayer.so:system/lib/plugins/com.adobe.flashplayer/libflashplayer.so \
-    vendor/lge/p930/proprietary/lib/plugins/com.adobe.flashplayer/libysshared.so:system/lib/plugins/com.adobe.flashplayer/libysshared.so \
-    vendor/lge/p930/proprietary/lib/plugins/com.adobe.flashplayer/libstagefright_froyo.so:system/lib/plugins/com.adobe.flashplayer/libstagefright_froyo.so \
-    vendor/lge/p930/proprietary/lib/plugins/com.adobe.flashplayer/libstagefright_honeycomb.so:system/lib/plugins/com.adobe.flashplayer/libstagefright_honeycomb.so \
-
 ## Firmware
 PRODUCT_COPY_FILES += \
     vendor/lge/p930/proprietary/etc/firmware/fw_bcmdhd_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
@@ -161,20 +153,3 @@ PRODUCT_COPY_FILES += \
     vendor/lge/p930/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
     vendor/lge/p930/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/lge/p930/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-
-# use all present proprietary apk
-PRODUCT_COPY_FILES += $(shell find vendor/lge/p930/proprietary/gapps -name '*.apk' \
-	-printf '%p:system/priv-app/%f ')
-
-# use all present proprietary lib
-PRODUCT_COPY_FILES += $(shell find vendor/lge/p930/proprietary/gapps -name '*.so' \
-	-printf '%p:system/lib/%f ')
-
-# use all present proprietary jar
-PRODUCT_COPY_FILES += $(shell find vendor/lge/p930/proprietary/gapps -name '*.jar' \
-	-printf '%p:system/framework/%f ')
-
-# use all present proprietary xml (permissions)
-PRODUCT_COPY_FILES += $(shell find vendor/lge/p930/proprietary/gapps -name '*.xml' \
-	-printf '%p:system/etc/permissions/%f ')
-
